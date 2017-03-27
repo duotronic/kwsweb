@@ -1,0 +1,65 @@
+﻿{% load bootstrap3 %} 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% bootstrap_css %}
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'w3/css/bootstrap.css' %}" />
+    {% bootstrap_javascript %}
+    <title>KWS Art</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+  	  <div class="container-fluid">
+    	<div class="navbar-header">
+    	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        	<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
+      	  </button> 
+          <a class="navbar-brand" href="{% url 'w3:index' %}">KWS Art</a>
+    	</div>
+
+    	<div class="collapse navbar-collapse" id="myNavbar">
+      	<ul class="nav navbar-nav">
+          <li class="active"><a href="{% url 'w3:contact' %}">Contact</a></li>
+{#          <li class="dropdown">#}
+{#            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page C <b class="caret"></b></a>#}
+{#            <ul class="dropdown-menu">#}
+{#			  <li><a href="#">Page C - 1</a></li>#}
+{#			  <li><a href="#">Page C - 2</a></li>#}
+{#			  <li><a href="#">Page C - 3</a></li>        #}
+{#			</ul>        #}
+{#          </li>#}
+      	</ul>
+      	<ul class="nav navbar-nav navbar-right">
+          <li><a href="{% url 'w3:topics' %}">Topics</a></li>
+            {% if user.is_authenticated %}
+              <li><a>Hello, {{ user.username }}.</a></li>
+              <li><a href="{% url 'users:logout' %}">log out</a></li>
+            {% else %}
+              <li><a href="{% url 'users:register' %}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      	      <li><a href="{% url 'users:login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            {% endif %}
+      	</ul>
+    	</div>
+  	</div>
+	</nav>
+
+    <div class="container">
+
+      <div class="page-header">
+        {% block header %}{% endblock %}
+      </div>
+      <div>
+        {% block content %}{% endblock %}
+      </div>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>

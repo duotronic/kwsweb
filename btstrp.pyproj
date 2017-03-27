@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>btstrp</Name>
+    <RootNamespace>btstrp</RootNamespace>
+    <InterpreterId>{dc0e6f40-06b6-4b8d-a033-389a84f63ead}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>bbcd2002-89af-4c3b-bfc2-bd50a7913a3c</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app\forms.py" />
+    <Compile Include="app\models.py" />
+    <Compile Include="app\tests.py" />
+    <Compile Include="app\views.py" />
+    <Compile Include="app\__init__.py" />
+    <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="btstrp\__init__.py" />
+    <Compile Include="btstrp\settings.py" />
+    <Compile Include="btstrp\urls.py" />
+    <Compile Include="btstrp\wsgi.py" />
+    <Compile Include="users\admin.py" />
+    <Compile Include="users\apps.py" />
+    <Compile Include="users\migrations\__init__.py" />
+    <Compile Include="users\models.py" />
+    <Compile Include="users\tests.py" />
+    <Compile Include="users\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="users\views.py" />
+    <Compile Include="users\__init__.py" />
+    <Compile Include="w3\admin.py" />
+    <Compile Include="w3\apps.py" />
+    <Compile Include="w3\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="w3\migrations\__init__.py" />
+    <Compile Include="w3\models.py" />
+    <Compile Include="w3\tests.py" />
+    <Compile Include="w3\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="w3\views.py" />
+    <Compile Include="w3\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\migrations\" />
+    <Folder Include="app\static\" />
+    <Folder Include="app\static\app\" />
+    <Folder Include="app\static\app\content\" />
+    <Folder Include="app\static\app\fonts\" />
+    <Folder Include="app\static\app\scripts\" />
+    <Folder Include="app\templates\" />
+    <Folder Include="app\templates\app\" />
+    <Folder Include="btstrp\" />
+    <Folder Include="btstrp\static\" />
+    <Folder Include="btstrp\static\btstrp\" />
+    <Folder Include="btstrp\templates\" />
+    <Folder Include="users\" />
+    <Folder Include="users\migrations\" />
+    <Folder Include="users\templates\" />
+    <Folder Include="users\templates\users\" />
+    <Folder Include="w3\" />
+    <Folder Include="w3\migrations\" />
+    <Folder Include="w3\static\" />
+    <Folder Include="w3\static\w3\" />
+    <Folder Include="w3\static\w3\css\" />
+    <Folder Include="w3\templates\" />
+    <Folder Include="w3\templates\w3\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="btstrp\templates\404.html" />
+    <Content Include="btstrp\templates\500.html" />
+    <None Include="compilerconfig.json" />
+    <Content Include="compilerconfig.json.defaults">
+      <SubType>Content</SubType>
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </Content>
+    <Content Include="password.txt" />
+    <Content Include="requirements.txt" />
+    <Content Include="db.sqlite3" />
+    <Content Include="app\static\app\content\bootstrap.css" />
+    <Content Include="app\static\app\content\bootstrap.min.css" />
+    <Content Include="app\static\app\content\site.css" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\static\app\scripts\bootstrap.js" />
+    <Content Include="app\static\app\scripts\bootstrap.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.map" />
+    <Content Include="app\static\app\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.min.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="app\static\app\scripts\modernizr-2.6.2.js" />
+    <Content Include="app\static\app\scripts\respond.js" />
+    <Content Include="app\static\app\scripts\respond.min.js" />
+    <Content Include="app\static\app\scripts\_references.js" />
+    <Content Include="app\templates\app\about.html" />
+    <Content Include="app\templates\app\contact.html" />
+    <Content Include="app\templates\app\index.html" />
+    <Content Include="app\templates\app\layout.html" />
+    <Content Include="app\templates\app\login.html" />
+    <Content Include="app\templates\app\loginpartial.html" />
+    <Content Include="users\templates\index.html" />
+    <Content Include="users\templates\users\login.html" />
+    <Content Include="users\templates\users\register.html" />
+    <Content Include="users\templates\users\register2.html" />
+    <Content Include="w3\static\w3\c01x.png" />
+    <Content Include="w3\static\w3\c02x.png" />
+    <Content Include="w3\static\w3\c03x.png" />
+    <Content Include="w3\static\w3\c04x.png" />
+    <Content Include="w3\static\w3\c05x.png" />
+    <Content Include="w3\static\w3\c06x.png" />
+    <Content Include="w3\static\w3\c07x.png" />
+    <Content Include="w3\static\w3\c08x.png" />
+    <Content Include="w3\static\w3\c09x.png" />
+    <Content Include="w3\static\w3\c10x.png" />
+    <Content Include="w3\static\w3\css\bootstrap.css" />
+    <Content Include="w3\static\w3\globe.gif" />
+    <Content Include="w3\static\w3\image_1.jpg" />
+    <Content Include="w3\static\w3\image_3.jpg" />
+    <Content Include="w3\templates\w3\base2.html" />
+    <Content Include="w3\templates\w3\contact.html" />
+    <Content Include="w3\templates\w3\edit_entry.html" />
+    <Content Include="w3\templates\index.html" />
+    <Content Include="w3\templates\w3\base.html" />
+    <Content Include="w3\templates\w3\index.html" />
+    <Content Include="w3\templates\w3\index2.html" />
+    <Content Include="w3\templates\w3\install_Ins.html" />
+    <Content Include="w3\templates\w3\new_entry.html" />
+    <Content Include="w3\templates\w3\new_topic.html" />
+    <Content Include="w3\templates\w3\employer.html" />
+    <Content Include="w3\templates\w3\x.html" />
+    <Content Include="w3\templates\w3\topic.html" />
+    <Content Include="w3\templates\w3\topics.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.mht">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>{dc0e6f40-06b6-4b8d-a033-389a84f63ead}</Id>
+      <BaseInterpreter>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</BaseInterpreter>
+      <Version>3.5</Version>
+      <Description>env (Python 64-bit 3.5)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>Amd64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

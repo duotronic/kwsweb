@@ -1,0 +1,15 @@
+﻿{% extends "w3/base.html" %}
+
+{% block content %}
+
+  <p><a href="{% url 'w3:topic' topic.id %}">{{ topic }}</a></p>
+
+  <p>Edit entry:</p>
+
+  <form action="{% url 'w3:edit_entry' entry.id %}" method='post'>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button name="submit">save changes</button>
+  </form>
+
+{% endblock content %}
