@@ -1,1 +1,1 @@
-kwsweb2 - Django, bootstrap3, postgres, pycharm, heroku deploy
+kwsweb - Django, bootstrap3, postgres, pycharm, heroku deploy
